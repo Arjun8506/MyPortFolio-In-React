@@ -8,7 +8,6 @@ const Header = () => {
   const { isDarkMode, toggleMode } = useToggleMode();
   const [isVisible, setisVisible] = useState(false);
   const [MenuButton, setMenuButton] = useState(false);
-  const windowSize = window.innerWidth;
   
   useEffect(() => {
     const handleResize = () => {
@@ -17,7 +16,6 @@ const Header = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -29,7 +27,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className=" w-full max-w-[1500px] mx-auto h-fit px-4 py-5 bg-gray-100/50 flex items-center justify-between fixed top-0 left-0">
+      <div className={`w-full max-w-[1500px] mx-auto h-fit px-4 py-5 bg-gray-100/80 flex items-center justify-between fixed top-0 left-0 z-50 ${isVisible && "bg-gray-500/90"} max-w-[1500px]`}>
         <h1 className=" text-4xl font-extrabold leading-none">AN</h1>
 
         <nav>
@@ -75,7 +73,7 @@ const Header = () => {
         </nav>
         
         {isVisible && (
-        <nav className=" w-full h-screen fixed top-[4.6rem] bg-gray-100/50 left-0">
+        <nav className=" w-full h-screen fixed top-[4.6rem] bg-gray-500/90 left-0">
           <ul className="flex items-center flex-col gap-5 my-10">
             <li>
               <a href="#" className="break-after-auto after:w-full after:h-full after:bg-orange-500 after:c">Home</a>
@@ -93,9 +91,6 @@ const Header = () => {
         </nav>
         )}
       </div>
-
-        bfgbsgirbgiubreuibgrieubgiuerbgreiubguirebgiuergbuirbibruibier
-        nagfrbigubuiabaiubreiaubgeairubgiuraebgiuregbiueauie
     </header>
   );
 };
