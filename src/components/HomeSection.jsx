@@ -4,7 +4,7 @@ import myImage from "../assets/MyImage.png"
 const HomeSection = () => {
   return (
     <section>
-      <div className=" w-full min-h-fit pt-24 px-5 flex items-center gap-10 justify-center flex-col lg:flex-row">
+      <div className=" w-full min-h-fit pt-28 px-5 flex items-center gap-10 justify-between flex-col lg:flex-row">
         <div className=" flex flex-col gap-1 w-full lg:w-[50%]">
           <div className=" w-32 h-1 bg-orange-500"></div>
           <h1 className=" text-2xl lg:text-4xl uppercase font-bold text-yellow-500">
@@ -22,12 +22,14 @@ const HomeSection = () => {
             knowledge about the ever-evolving world of technology.
           </p>
 
-          <button className=" w-fit py-2 px-4 bg-orange-500 rounded-lg hover:opacity-80 mx-auto my-5">Download Resume</button>
+          <button className=" w-fit py-2 px-4 bg-orange-500 rounded-lg hover:opacity-80 mx-auto lg:mx-0 my-5">
+            <a href="https://drive.google.com/file/d/1_i71FX48ntCVSC4QypA5quFH_TNWf2xQ/view" target="_blank" >Download Resume</a>
+          </button>
 
         </div>
 
-        <div className="w-full lg:w-[40%] rounded-full border-2 ">
-          <img src={myImage} alt="" className=" w-full h-full rounded-full" />
+        <div className="w-full lg:w-[35%] rounded-full border-2 image-container overflow-hidden">
+          <img src={myImage} alt="" className=" w-full h-full object-cover" />
         </div>
 
       </div>

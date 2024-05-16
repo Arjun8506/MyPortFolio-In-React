@@ -5,8 +5,8 @@ const AboutSection = () => {
   return (
     <div className=" w-full min-h-fit pt-24 px-5" id="About">
       <h1 className=" text-2xl text-center font-bold uppercase">About Me</h1>
-      <div className=" lg:flex lg:flex-row items-center mt-10 justify-between">
-        <div className=" flex items-start gap-5 justify-between text-sm flex-col my-5 lg:text-lg">
+      <div className=" lg:flex lg:flex-row items-center mt-10 justify-evenly">
+        <div className=" flex items-start gap-5 justify-between text-sm flex-col my-5 lg:text-xl">
           <ul>
             <li>
               First Name: <span>Arjun</span>
@@ -31,7 +31,7 @@ const AboutSection = () => {
           </ul>
         </div>
 
-        <div className=" grid grid-cols-2 gap-5">
+        <div className=" grid grid-cols-2 gap-5 lg:text-xl hover:cursor-pointer">
           <div className="aboutskills py-4 px-4 lg:py-6 lg:px-10 hover:scale-110" >
             <h1>+1</h1>
             <h2>ReactJS</h2>

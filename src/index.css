@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -14,20 +14,20 @@ html {
 }
 
 /* Track */
-::-webkit-scrollbar-track { 
+::-webkit-scrollbar-track {
   border-radius: 1px;
   background-color: rgba(0, 0, 0, 0.315);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(72, 255, 0); 
+  background: rgb(255, 187, 0);
   border-radius: 1px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2ab300d0; 
+  background: #ffa600d0;
 }
 /* styles.css */
 
@@ -35,46 +35,46 @@ a {
   position: relative;
 }
 
-body{
+body {
   font-family: "Poetsen One", gilroy;
 }
 
-#About span{
+#About span {
   font-weight: 900 !important;
 }
-#About li{
+#About li {
   font-weight: 100;
 }
 
-.aboutskills{
+.aboutskills {
   border: 2px solid orange;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center ;
-  justify-content: center ;
+  align-items: center;
+  justify-content: center;
   transition: all ease-in-out 0.5s;
 }
-.aboutskills:hover{
+.aboutskills:hover {
   border-color: orangered;
   transform: scale(1.2);
 }
 
-.projectDes{
+.projectDes {
   border: 2px solid orange;
   padding: 10px;
 }
-.projectDes h1{
+.projectDes h1 {
   text-transform: uppercase;
 }
 
-.projectDes a{
+.projectDes a {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   background-color: orange;
   text-align: center;
 }
-.projectDes a:hover{
+.projectDes a:hover {
   transition: all ease-in-out 0.5s;
   filter: opacity(90%);
   background-color: orangered;
@@ -106,5 +106,63 @@ body{
   transform: scale(1.1);
 }
 
+@keyframes borderAnimation {
+  0% {
+    border-color: #ff6550;
+    border-radius: 0px;
+    border-width: 1px;
+  }
+  12.5% {
+    border-color: #ff6550;
+    border-radius: 25px 25px 0px 0px;
+    border-width: 2px;
+  }
+  25% {
+    border-color: #ff9000;
+    border-radius: 50px 50px 25px 25px;
+    border-width: 3px;
+  }
+  37.5% {
+    border-color: #fff900;
+    border-radius: 75px 0px 50px 50px;
+    border-width: 4px;
+  }
+  50% {
+    border-color: #ffff00;
+    border-radius: 100px 0px 91px 92px;
+    border-width: 5px;
+  }
+  62.5% {
+    border-color: #ffdd00;
+    border-radius: 100px 50px 100px 50px;
+    border-width: 4px;
+  }
+  75% {
+    border-color: #ffbb00;
+    border-radius: 38px 141px 0px 83px;
+    border-width: 3px;
+  }
+  87.5% {
+    border-color: #ffaa00;
+    border-radius: 75px 75px 25px 25px;
+    border-width: 2px;
+  }
+  100% {
+    border-color: #ff6550;
+    border-radius: 0px;
+    border-width: 1px;
+  }
+}
+
+.image-container {
+  animation: borderAnimation 5s ease-in-out infinite;
+  border-style: solid;
+}
+
+.skillcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
