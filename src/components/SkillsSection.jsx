@@ -52,6 +52,16 @@ const SkillsSection = () => {
       h1: "TailwindCSS",
       color: "#00BEFF",
     },
+    {
+      name: "nextjs",
+      h1: "Next.js",
+      color: "#000000", // Black for Next.js
+    },
+    {
+      name: "remix",
+      h1: "Remix.js",
+      color: "#3f51b5", // A purple shade for Remix.js
+    },
   ];
 
   return (
