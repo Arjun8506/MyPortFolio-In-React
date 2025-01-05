@@ -33,7 +33,7 @@ const AboutSection = () => {
 
         <div className=" grid grid-cols-2 gap-5 lg:text-xl hover:cursor-pointer">
           <div className="aboutskills py-4 px-4 lg:py-6 lg:px-10 hover:scale-110" >
-            <h1>+1</h1>
+            <h1>+2</h1>
             <h2>ReactJS</h2>
           </div>
           <div className="aboutskills py-4 px-4 lg:py-6 lg:px-10">
@@ -45,7 +45,7 @@ const AboutSection = () => {
             <h2>Backend</h2>
           </div>
           <div className="aboutskills py-4 px-4 lg:py-6 lg:px-10">
-            <h1>+2</h1>
+            <h1>+3</h1>
             <h2>Frontend</h2>
           </div>
         </div>
