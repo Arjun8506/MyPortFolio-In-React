@@ -1,5 +1,6 @@
 import React from "react";
-import myImage from "../assets/MyImage.png"
+import myImage from "../assets/MyImage.png";
+import ButtonComp from "./ButtonComp";
 
 const HomeSection = () => {
   return (
@@ -15,23 +16,29 @@ const HomeSection = () => {
           </h1>
           <p className=" text-sm lg:text-lg">
             With expertise in the complete MERN stack, as well as Git and
-            GitHub. I have created several impressive projects that showcase my
-            dedication to web development and my commitment to continuous
-            learning. I am eager to bring my skills and passion to your
-            organization, contributing my potential while gaining deeper
-            knowledge about the ever-evolving world of technology.
+            GitHub. I worked as a Frontend Developer at Qurilo Solutions Pvt Ltd
+            for 6 months, where I collaborated with a diverse team of
+            professionals, leveraging Git and GitHub for seamless version
+            control and team coordination. During this tenure, I gained valuable
+            experience working on various projects and enhancing my ability to
+            thrive in a collaborative environment. I am eager to bring my skills
+            and passion to your organization, contributing my potential while
+            gaining deeper knowledge about the ever-evolving world of
+            technology.
           </p>
 
-          <button className=" w-fit py-2 px-4 bg-orange-500 rounded-lg hover:opacity-80 mx-auto lg:mx-0 my-5">
-            <a href="https://drive.google.com/file/d/1_i71FX48ntCVSC4QypA5quFH_TNWf2xQ/view" target="_blank" >Download Resume</a>
-          </button>
-
+          <ButtonComp
+            link={
+              "https://drive.google.com/file/d/1_i71FX48ntCVSC4QypA5quFH_TNWf2xQ/view"
+            }
+            text={"Download Resume"}
+            width={"w-fit"}
+          />
         </div>
 
         <div className="w-full lg:w-[35%] rounded-full border-2 image-container overflow-hidden">
           <img src={myImage} alt="" className=" w-full h-full object-cover" />
         </div>
-
       </div>
     </section>
   );

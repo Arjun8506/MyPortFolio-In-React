@@ -48,7 +48,7 @@ const Header = () => {
               </li>
             </ul>
           ) : (
-            <ul className="flex items-center gap-5">
+            <ul className="flex items-center text-sm gap-5">
               <li>
                 <a
                   href="#"
